@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.menu-link{
+    background-color: rgb(75, 75, 75);
+    overflow: hidden;
+}
+.menu-link a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    float: left;
+    display: block;
+}
+.menu-link a:hover{
+    background-color: rgb(138, 138, 138);
+    color: black;
+}
+.row{
+    width: 100%;
+    display: block;
+}
+.col-md-12{
+    width: 100%;
+    float: left;
+    height: 250px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.bg-danger{
+    background-color: red;
+}
+.bg-success{
+    background-color: green;
+}
+.bg-info{
+    background-color: thistle;
+}
+.bg-primary{
+    background-color: tomato;
+}
+.row2{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 20px;
+}
+.column{
+    flex: 25%;
+    padding: 0 4px;
+}
+.column img{
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:1024px){
+    .menu-link{
+        background-color: red;
+    }
+}
+@media screen and (max-width:768px){
+    .menu-link{
+        background-color: yellow;
+    }
+    .col-md-12{
+        width: 50%;
+        float: left;
+    }
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:560px){
+    .menu-link{
+        background-color: green;
+    }
+    .menu-link a{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .col-md-12{
+        width: 100%;
+        float: left;
+    }
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}

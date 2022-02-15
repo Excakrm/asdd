@@ -1,0 +1,28 @@
+.blog-container{
+    width: 100%;
+    text-align: center;
+}
+
+.blog-container .blog-top{
+    margin:20px;
+    display:table;  
+    justify-content: center;
+    width: 100%;
+}
+.blog-container .blog-top .blog-item {
+    width: 22%;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin:1%;
+    float: left;
+}
+.blog-container .blog-top .blog-item img{
+    width: 100%;
+}
+.blog-container .blog-bottom{
+    float: inline-start;
+}
+.blog-container .blog-bottom .page-buttons{
+    display: flex;
+    float: left;
+}
